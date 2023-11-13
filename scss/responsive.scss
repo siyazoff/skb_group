@@ -16,4 +16,54 @@ $blue: #2c39ac;
 }
 
 @media all and (max-width: 768px) {
+  .cont {
+    padding-inline: 10px;
+  }
+
+  .header {
+    position: relative;
+
+    .adaptive-number {
+      display: inline-block;
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      bottom: 0;
+      @include font(1.3rem, 2rem, 700);
+    }
+
+    .popup-wrapper {
+      .wrapper-menu {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        display: none;
+
+        a {
+          @include font(1.3rem, 2rem, 700);
+
+          &.number {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__active {
+      .popup-wrapper {
+        .wrapper-menu {
+          display: grid;
+        }
+        .humb {
+          display: none;
+        }
+      }
+
+      .adaptive-number {
+        bottom: 20px;
+        left: 10px;
+        opacity: 1;
+        transition: all 1s;
+      }
+    }
+  }
 }
