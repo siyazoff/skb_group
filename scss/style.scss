@@ -1,0 +1,185 @@
+@import url("../src/fonts/NeueMachina/stylesheet.css");
+
+$neue: "Neue Machina";
+
+$main: #3c4e4e;
+$black: #333333;
+$gray: #444;
+$green: #23a04d;
+$red: #ac2c43;
+$blue: #2c39ac;
+
+@mixin font($size, $height, $weight) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+* {
+  font-family: $neue;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none !important;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $main;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      112.92deg,
+      rgba(255, 255, 255, 0.36) 10.45%,
+      rgba(255, 255, 255, 0.09) 88.73%
+    );
+  }
+}
+
+main {
+  overflow-x: hidden;
+}
+
+section,
+header,
+footer {
+  background-color: #f8ffff;
+}
+
+.cont {
+  width: 100%;
+  max-width: 130rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: rgba(25, 25, 25, 0.7);
+  padding: 1.2rem 0;
+}
+
+.popup-wrapper {
+  .humb {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+
+    svg {
+      &:hover {
+        rect {
+          transition: all 0.3s;
+
+          &:nth-child(2n) {
+            transform: translateX(-1rem);
+            transition: all 0.3s;
+          }
+
+          &:nth-child(3n) {
+            transform: translateX(-1rem);
+            transition: all 0.6s;
+          }
+        }
+      }
+
+      rect {
+        transition: all 0.3s;
+
+        &:nth-child(2n) {
+          transition: all 0.3s;
+        }
+
+        &:nth-child(3n) {
+          transition: all 0.6s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import url("../src/fonts/NeueMachina/stylesheet.css");
+
+$neue: "Neue Machina";
+
+$main: #d1a954;
+$black: #333333;
+$gray: #444;
+$green: #23a04d;
+$red: #ac2c43;
+$blue: #2c39ac;
+
+@mixin font($size, $height, $weight) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@media all and (max-width: 768px) {
+}
