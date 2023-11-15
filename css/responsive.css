@@ -3,9 +3,6 @@
   .cont {
     padding-inline: 10px;
   }
-  .header {
-    position: relative;
-  }
   .header .adaptive-number {
     display: inline-block;
     position: absolute;
@@ -41,5 +38,169 @@
     left: 10px;
     opacity: 1;
     transition: all 1s;
+  }
+  .home .wrapper {
+    margin-top: auto;
+  }
+  .home .wrapper .heading {
+    max-width: 100%;
+    margin-bottom: 4.4rem;
+  }
+  .home .wrapper .heading h1 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.2rem;
+  }
+  .home .btn-next {
+    display: none;
+  }
+  .home .wrapper__btns {
+    display: none;
+  }
+  .about-top {
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(/src/img/about-top-bg.png), lightgray 50%/cover no-repeat;
+    background-position: 100%;
+    background-size: cover;
+  }
+  .about-top .heading br {
+    display: block;
+  }
+  .about-top .heading h2 {
+    font-size: 6.4rem;
+    line-height: 6.8rem;
+    font-weight: 700;
+    text-align: end;
+  }
+  .about-top .heading h3 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  .about {
+    padding: 12rem 0;
+  }
+  .about .heading {
+    max-width: 100%;
+  }
+  .about .heading h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #3c4e4e;
+  }
+  .about .heading h2 span {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin-right: 40px;
+  }
+  .about .about__p {
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+  }
+  .about .wrapper-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  .about .wrapper-imgs img {
+    width: 100%;
+    height: 100%;
+  }
+  .about .wrapper-imgs img:first-child {
+    min-height: 18.4rem;
+    max-width: 34.5rem;
+  }
+  .about .wrapper-imgs img:nth-child(2n) {
+    height: 27.2rem;
+    max-width: 24.7rem;
+    margin-left: auto;
+  }
+  .about .wrapper-bottom {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .about .wrapper-bottom p {
+    color: #3c4e4e;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .about .wrapper-bottom .skb-btn {
+    margin-left: auto;
+  }
+  .order {
+    padding: 12rem 0;
+  }
+  .order .heading {
+    max-width: 100%;
+  }
+  .order .heading h2 {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    font-weight: 700;
+    color: white;
+  }
+  .order .heading h2 span {
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin-right: 80px;
+  }
+  .order .wrapper {
+    margin-left: 0;
+  }
+  .order .wrapper p {
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
+  .order .wrapper form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: relative;
+  }
+  .order .wrapper form .form-order__first {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .order .wrapper form .form-order__third {
+    grid-row: 3;
+    grid-column: span 1;
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+  }
+  .order .wrapper form .form-order__third input {
+    width: 100%;
+  }
+  .order .wrapper form .form-order__third .input__wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+  }
+  .order .wrapper form input {
+    background: bottom;
+    border-bottom: 1px solid white;
+    padding: 0.4rem 0;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: white;
+  }
+  .order .wrapper form .skb-btn {
+    transition: all 0.5s;
+    margin: auto;
+    margin-top: 1.4rem;
+    position: relative;
+    right: unset;
   }
 }/*# sourceMappingURL=responsive.css.map */
