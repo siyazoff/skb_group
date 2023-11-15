@@ -404,6 +404,12 @@ footer {
     z-index: 0;
     width: 32.4rem;
     transition: all 1s;
+    flex-shrink: 0;
+    display: flex;
+
+    &:first-child {
+      flex: 1 1 1rem;
+    }
 
     .hover {
       height: 100%;
@@ -415,12 +421,27 @@ footer {
       position: relative;
       z-index: 1;
       padding: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: auto;
+      transition: all 0.5s;
 
       .item__top {
         transition: all 1s;
         opacity: 1;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+
+        .skb-btn {
+          display: none;
+        }
+
         .title {
           color: white;
+          max-width: 55.2rem;
 
           h2 {
             @include font(2.8rem, 3.2rem, 700);
@@ -431,6 +452,7 @@ footer {
             @include font(1.5rem, 2.4rem, 400);
             opacity: 0;
             visibility: hidden;
+            display: none;
           }
         }
       }
@@ -457,7 +479,7 @@ footer {
     }
 
     &.highlight {
-      max-width: 16.2rem;
+      width: 16.2rem;
       transition: all 1s;
 
       .hover {
@@ -478,13 +500,23 @@ footer {
       transition: all 1s;
 
       .hover {
+        height: 40%;
+        transition: all 0.5s;
+
         .item__top {
           .title {
             p {
               opacity: 1;
               visibility: visible;
               transition: all 0.5s;
+              display: inline-block;
             }
+          }
+
+          .skb-btn {
+            display: flex;
+            width: 15.2rem;
+            height: 15.2rem;
           }
         }
       }
@@ -707,6 +739,261 @@ footer {
         margin-top: auto;
         position: absolute;
         right: 0;
+      }
+    }
+  }
+}
+
+.business {
+  padding: 14rem 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(/src/img/business_bg.png), lightgray 50% / cover no-repeat;
+
+  .heading {
+    text-align: center;
+    width: 100%;
+    h2 {
+      @include font(5rem, 5.6rem, 700);
+      color: #f8ffff;
+      max-width: 63.5rem;
+      margin: auto;
+      margin-bottom: 4.4rem;
+    }
+
+    p {
+      @include font(1.9rem, 3.2rem, 400);
+      color: #f8ffff;
+      max-width: 81.6rem;
+      margin: auto;
+      margin-bottom: 5.2rem;
+    }
+  }
+
+  .skb-btn {
+    margin: auto;
+    margin-bottom: 5.2rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    gap: 48px;
+
+    p {
+      @include font(2rem, 2.4rem, 700);
+      color: white;
+      max-width: 28.8rem;
+      width: 100%;
+      text-align: center;
+      padding: 2.2rem 0 1.8rem;
+      background: #3c4e4ed6;
+    }
+  }
+}
+
+.contacts {
+  padding: 14rem 0;
+  background: #f8ffff;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 17.3rem 38.4rem 1fr;
+    gap: 5rem;
+  }
+
+  .grid__first {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    p {
+      @include font(1.5rem, 2.4rem, 400);
+      color: #3c4e4e;
+    }
+  }
+
+  .grid__second {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    a,
+    p {
+      @include font(1.5rem, 2.4rem, 400);
+      color: #3c4e4e;
+    }
+  }
+
+  .grid__third {
+    a {
+      @include font(12.8rem, 13.2rem, 400);
+      color: #3c4e4e;
+      text-align: end;
+      display: inline-block;
+    }
+  }
+}
+
+.news {
+  padding-bottom: 100px;
+
+  .heading {
+    max-width: 91.2rem;
+    margin-bottom: 3.2rem;
+    text-transform: uppercase;
+
+    h2 {
+      @include font(3.6rem, 4.4rem, 700);
+      color: #3c4e4e;
+
+      span {
+        @include font(1.9rem, 3.2rem, 400);
+        color: #a8a8a8;
+        margin-right: 80px;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 4.8rem;
+    margin-bottom: 4.4rem;
+
+    a.first-link {
+      max-width: 62.4rem;
+      display: flex;
+      flex-direction: column;
+      height: 49.2rem;
+      padding: 2.4rem;
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.8) 18.12%,
+          rgba(0, 0, 0, 0.47) 37.62%,
+          rgba(0, 0, 0, 0) 59.85%
+        ),
+        url(/src/img/news-1.png), lightgray 50% / cover no-repeat;
+      background-position: center 0;
+
+      display: flex;
+
+      h3 {
+        margin-top: auto;
+        @include font(2.4rem, 2.8rem, 700);
+        margin-bottom: 0.4rem;
+        color: white;
+      }
+
+      p {
+        @include font(1.5rem, 2.4rem, 400);
+        color: white;
+        margin-bottom: 0.4rem;
+
+        &:nth-child(3n) {
+          @include font(1.5rem, 2.4rem, 700);
+          margin-left: auto;
+        }
+      }
+    }
+
+    .block__wrapper {
+      display: flex;
+      gap: 4.8rem;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        max-width: 28.8rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        h3 {
+          @include font(2rem, 2.4rem, 700);
+          color: #3c4e4e;
+        }
+
+        p {
+          @include font(1.3rem, 2rem, 400);
+          color: #a8a8a8;
+
+          &:nth-child(2n) {
+            font-weight: 700;
+            margin-left: auto;
+            color: #3c4e4e;
+          }
+        }
+      }
+    }
+  }
+
+  .skb-btn {
+    color: #3c4e4e;
+    font-weight: 700;
+    margin: auto;
+  }
+}
+
+footer {
+  background: #2f2f2f;
+  padding: 14rem 0 10.4rem;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15rem;
+    margin-bottom: 3.6rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .grid__first,
+    .grid__second,
+    .grid__third {
+      display: flex;
+      flex-direction: column;
+      gap: 4.8rem;
+
+      a,
+      p {
+        @include font(1.5rem, 2.4rem, 700);
+        color: white;
+      }
+    }
+  }
+
+  .copyright {
+    @include font(1.5rem, 2.4rem, 400);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      max-width: 104.5rem;
+    }
+
+    a {
+      display: flex;
+      align-items: end;
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      gap: 0.8rem;
+
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-bottom: 0.5rem;
       }
     }
   }

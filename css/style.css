@@ -351,6 +351,11 @@ footer {
   z-index: 0;
   width: 32.4rem;
   transition: all 1s;
+  flex-shrink: 0;
+  display: flex;
+}
+.examples .wrapper__item:first-child {
+  flex: 1 1 1rem;
 }
 .examples .wrapper__item .hover {
   height: 100%;
@@ -358,13 +363,26 @@ footer {
   position: relative;
   z-index: 1;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  transition: all 0.5s;
 }
 .examples .wrapper__item .hover .item__top {
   transition: all 1s;
   opacity: 1;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+.examples .wrapper__item .hover .item__top .skb-btn {
+  display: none;
 }
 .examples .wrapper__item .hover .item__top .title {
   color: white;
+  max-width: 55.2rem;
 }
 .examples .wrapper__item .hover .item__top .title h2 {
   font-size: 2.8rem;
@@ -378,6 +396,7 @@ footer {
   font-weight: 400;
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 .examples .wrapper__item .hover .item__bottom {
   width: 100%;
@@ -397,7 +416,7 @@ footer {
   font-weight: 400;
 }
 .examples .wrapper__item.highlight {
-  max-width: 16.2rem;
+  width: 16.2rem;
   transition: all 1s;
 }
 .examples .wrapper__item.highlight .hover .item__top {
@@ -412,10 +431,20 @@ footer {
   width: 81rem;
   transition: all 1s;
 }
+.examples .wrapper__item:hover .hover {
+  height: 40%;
+  transition: all 0.5s;
+}
 .examples .wrapper__item:hover .hover .item__top .title p {
   opacity: 1;
   visibility: visible;
   transition: all 0.5s;
+  display: inline-block;
+}
+.examples .wrapper__item:hover .hover .item__top .skb-btn {
+  display: flex;
+  width: 15.2rem;
+  height: 15.2rem;
 }
 
 .about-top {
@@ -612,4 +641,247 @@ footer {
   margin-top: auto;
   position: absolute;
   right: 0;
+}
+
+.business {
+  padding: 14rem 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/src/img/business_bg.png), lightgray 50%/cover no-repeat;
+}
+.business .heading {
+  text-align: center;
+  width: 100%;
+}
+.business .heading h2 {
+  font-size: 5rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+  color: #f8ffff;
+  max-width: 63.5rem;
+  margin: auto;
+  margin-bottom: 4.4rem;
+}
+.business .heading p {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #f8ffff;
+  max-width: 81.6rem;
+  margin: auto;
+  margin-bottom: 5.2rem;
+}
+.business .skb-btn {
+  margin: auto;
+  margin-bottom: 5.2rem;
+}
+.business .wrapper {
+  width: 100%;
+  display: flex;
+  gap: 48px;
+}
+.business .wrapper p {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: white;
+  max-width: 28.8rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.2rem 0 1.8rem;
+  background: rgba(60, 78, 78, 0.8392156863);
+}
+
+.contacts {
+  padding: 14rem 0;
+  background: #f8ffff;
+}
+.contacts .grid {
+  display: grid;
+  grid-template-columns: 17.3rem 38.4rem 1fr;
+  gap: 5rem;
+}
+.contacts .grid__first {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.contacts .grid__first p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #3c4e4e;
+}
+.contacts .grid__second {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.contacts .grid__second a,
+.contacts .grid__second p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #3c4e4e;
+}
+.contacts .grid__third a {
+  font-size: 12.8rem;
+  line-height: 13.2rem;
+  font-weight: 400;
+  color: #3c4e4e;
+  text-align: end;
+  display: inline-block;
+}
+
+.news {
+  padding-bottom: 100px;
+}
+.news .heading {
+  max-width: 91.2rem;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+.news .heading h2 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  font-weight: 700;
+  color: #3c4e4e;
+}
+.news .heading h2 span {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #a8a8a8;
+  margin-right: 80px;
+}
+.news .wrapper {
+  display: flex;
+  gap: 4.8rem;
+  margin-bottom: 4.4rem;
+}
+.news .wrapper a.first-link {
+  max-width: 62.4rem;
+  display: flex;
+  flex-direction: column;
+  height: 49.2rem;
+  padding: 2.4rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 18.12%, rgba(0, 0, 0, 0.47) 37.62%, rgba(0, 0, 0, 0) 59.85%), url(/src/img/news-1.png), lightgray 50%/cover no-repeat;
+  background-position: center 0;
+  display: flex;
+}
+.news .wrapper a.first-link h3 {
+  margin-top: auto;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: white;
+}
+.news .wrapper a.first-link p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+.news .wrapper a.first-link p:nth-child(3n) {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+.news .wrapper .block__wrapper {
+  display: flex;
+  gap: 4.8rem;
+}
+.news .wrapper .block__wrapper a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 28.8rem;
+}
+.news .wrapper .block__wrapper a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.news .wrapper .block__wrapper a h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #3c4e4e;
+}
+.news .wrapper .block__wrapper a p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+.news .wrapper .block__wrapper a p:nth-child(2n) {
+  font-weight: 700;
+  margin-left: auto;
+  color: #3c4e4e;
+}
+.news .skb-btn {
+  color: #3c4e4e;
+  font-weight: 700;
+  margin: auto;
+}
+
+footer {
+  background: #2f2f2f;
+  padding: 14rem 0 10.4rem;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15rem;
+  margin-bottom: 3.6rem;
+}
+footer .grid img {
+  width: 100%;
+  height: auto;
+}
+footer .grid .grid__first,
+footer .grid .grid__second,
+footer .grid .grid__third {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+footer .grid .grid__first a,
+footer .grid .grid__first p,
+footer .grid .grid__second a,
+footer .grid .grid__second p,
+footer .grid .grid__third a,
+footer .grid .grid__third p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: white;
+}
+footer .copyright {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright p {
+  max-width: 104.5rem;
+}
+footer .copyright a {
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  gap: 0.8rem;
+}
+footer .copyright a img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -135,6 +135,93 @@
   .about .wrapper-bottom .skb-btn {
     margin-left: auto;
   }
+  .examples {
+    padding: 12rem 0;
+  }
+  .examples .heading {
+    max-width: 100%;
+  }
+  .examples .heading h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+  }
+  .examples .heading h2 span {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+  .examples .wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .examples .wrapper__item {
+    height: 20.2rem;
+    width: 100%;
+  }
+  .examples .wrapper__item:first-child {
+    flex: 1 1 1rem;
+  }
+  .examples .wrapper__item .hover {
+    padding: 16px;
+    transition: all 1s;
+  }
+  .examples .wrapper__item .hover .item__top {
+    transition: all 1s;
+    opacity: 1;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    flex-direction: column;
+    margin-top: 9rem;
+  }
+  .examples .wrapper__item .hover .item__top .title {
+    max-width: 100%;
+  }
+  .examples .wrapper__item .hover .item__top .skb-btn {
+    margin-left: auto;
+  }
+  .examples .wrapper__item .hover .item__bottom {
+    width: 100%;
+    transition: all 1s;
+    opacity: 1;
+  }
+  .examples .wrapper__item.highlight {
+    width: 100%;
+    transition: all 1s;
+    height: 20.2rem;
+  }
+  .examples .wrapper__item.highlight .hover .item__top {
+    opacity: 1;
+    transition: all 1s;
+  }
+  .examples .wrapper__item.highlight .hover .item__bottom {
+    opacity: 1;
+    transition: all 1s;
+  }
+  .examples .wrapper__item:hover {
+    width: 100%;
+    height: 50rem;
+    transition: all 1s;
+    background-position: 40% 40%;
+  }
+  .examples .wrapper__item:hover .hover {
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .examples .wrapper__item:hover .hover .item__top .title p {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+    display: inline-block;
+  }
+  .examples .wrapper__item:hover .hover .item__top .skb-btn {
+    display: flex;
+    width: 15.2rem;
+    height: 15.2rem;
+  }
   .order {
     padding: 12rem 0;
   }
@@ -202,5 +289,208 @@
     margin-top: 1.4rem;
     position: relative;
     right: unset;
+  }
+  .business {
+    padding: 12rem 0;
+  }
+  .business .heading {
+    text-align: center;
+    width: 100%;
+  }
+  .business .heading h2 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: #f8ffff;
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+  }
+  .business .heading p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #f8ffff;
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+  .business .skb-btn {
+    margin-bottom: 2rem;
+    width: 15.2rem;
+    height: 15.2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .business .wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+  .business .wrapper p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: white;
+    max-width: 100%;
+    padding: 1.4rem 0;
+    background: rgba(60, 78, 78, 0.8392156863);
+  }
+  .contacts {
+    padding: 12rem 0;
+  }
+  .contacts .grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    position: relative;
+  }
+  .contacts .grid__first {
+    max-width: 12.9rem;
+  }
+  .contacts .grid__second .skb-btn {
+    margin: auto;
+    width: 15.2rem;
+    height: 15.2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .contacts .grid__third a {
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+    font-weight: 400;
+    color: #3c4e4e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 27.5rem;
+  }
+  .news {
+    padding-bottom: 11.5rem;
+  }
+  .news .heading {
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+  }
+  .news .heading h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #3c4e4e;
+  }
+  .news .heading h2 span {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin-right: 50px;
+  }
+  .news .wrapper {
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+  .news .wrapper a.first-link {
+    max-width: 100%;
+    padding: 1.6rem;
+    display: flex;
+  }
+  .news .wrapper a.first-link h3 {
+    margin-top: auto;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .news .wrapper a.first-link p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+  .news .wrapper a.first-link p:nth-child(3n) {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .news .wrapper .block__wrapper {
+    display: flex;
+    gap: 1.7rem;
+  }
+  .news .wrapper .block__wrapper a {
+    gap: 0.4rem;
+    max-width: 50%;
+  }
+  .news .wrapper .block__wrapper a h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .news .wrapper .block__wrapper a p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+  }
+  .news .skb-btn {
+    width: 15.2rem;
+    height: 15.2rem;
+  }
+  footer {
+    padding: 6rem 0;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 10rem;
+  }
+  footer .grid img {
+    width: 11.4rem;
+    height: auto;
+    grid-column: span 2;
+  }
+  footer .grid .grid__first,
+  footer .grid .grid__second,
+  footer .grid .grid__third {
+    gap: 2.4rem;
+  }
+  footer .grid .grid__first a,
+  footer .grid .grid__first p,
+  footer .grid .grid__second a,
+  footer .grid .grid__second p,
+  footer .grid .grid__third a,
+  footer .grid .grid__third p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+  footer .grid .grid__third {
+    flex-wrap: wrap;
+    grid-column: span 2;
+    flex-direction: row;
+  }
+  footer .copyright {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  footer .copyright p {
+    max-width: 100%;
+  }
+  footer .copyright a {
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  footer .copyright a img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 0.5rem;
   }
 }/*# sourceMappingURL=responsive.css.map */
