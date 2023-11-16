@@ -493,4 +493,115 @@
     height: 1.6rem;
     margin-bottom: 0.5rem;
   }
+  .secondary__home .wrapper .heading {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .secondary__home .wrapper .heading h1 .main-span {
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+    flex-direction: column;
+  }
+  .secondary__home .wrapper .heading p {
+    max-width: 100%;
+  }
+  .secondary__home .wrapper .home__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+  }
+  .choose {
+    padding: 12rem 0;
+    height: auto;
+  }
+  .choose .heading {
+    margin-bottom: 2.4rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .choose .heading h1 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    max-width: 100%;
+  }
+  .choose .heading h1 span {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-right: 4.3rem;
+  }
+  .choose .tabby {
+    height: auto;
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+  .choose .tabby li {
+    width: 100%;
+  }
+  .choose .tabby a {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  .choose .swiper-two-room__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .choose .swiper-two-room {
+    width: 100%;
+    max-width: 100%;
+    height: 36.1rem;
+  }
+  .choose .swiper-two-room .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .choose .swiper-two-room .swiper-slide img {
+    -o-object-position: center;
+       object-position: center;
+  }
+  .choose .swiper-two-room .swiper-slide-active {
+    width: 100%;
+    height: 100%;
+  }
+  .choose .info {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .choose .info h2 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .choose .info p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  .choose .info .swiper-info__first,
+  .choose .info .swiper-info__second,
+  .choose .info .swiper-info__third {
+    height: 2.4rem;
+  }
+  .choose .absolute-skb-btn {
+    left: unset;
+    right: 0;
+    border: 1px solid #ededed;
+    width: 15.2rem;
+    height: 15.2rem;
+  }
+  .choose .swipe-wrap {
+    flex-direction: column-reverse;
+  }
+  .choose .swipe-wrap .absolute-p {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    order: 1;
+  }
 }/*# sourceMappingURL=responsive.css.map */

@@ -567,4 +567,137 @@ $blue: #2c39ac;
       }
     }
   }
+
+  .secondary__home {
+    .wrapper {
+      .heading {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        h1 {
+          .main-span {
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+            flex-direction: column;
+          }
+        }
+
+        p {
+          max-width: 100%;
+        }
+      }
+
+      .home__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+
+        a {
+        }
+      }
+    }
+  }
+
+  .choose {
+    padding: 12rem 0;
+    height: auto;
+
+    .heading {
+      margin-bottom: 2.4rem;
+      flex-direction: column;
+      gap: 2rem;
+
+      h1 {
+        @include font(2.4rem, 2.8rem, 700);
+        max-width: 100%;
+
+        span {
+          @include font(1.3rem, 2rem, 400);
+          margin-right: 4.3rem;
+        }
+      }
+    }
+
+    .tabby {
+      height: auto;
+      gap: 1.2rem;
+      flex-direction: column;
+
+      li {
+        width: 100%;
+      }
+
+      a {
+        @include font(1.5rem, 2.4rem, 400);
+      }
+    }
+
+    .swiper-two-room__wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .swiper-two-room {
+      width: 100%;
+      max-width: 100%;
+      height: 36.1rem;
+
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+
+        img {
+          object-position: center;
+        }
+      }
+
+      .swiper-slide-active {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info {
+      flex-direction: column;
+      gap: 0.8rem;
+
+      h2 {
+        @include font(1.5rem, 2.4rem, 700);
+      }
+
+      p {
+        @include font(1.5rem, 2.4rem, 400);
+      }
+
+      .swiper-info__first,
+      .swiper-info__second,
+      .swiper-info__third {
+        height: 2.4rem;
+      }
+    }
+
+    .absolute-skb-btn {
+      left: unset;
+      right: 0;
+
+      border: 1px solid #ededed;
+      width: 15.2rem;
+      height: 15.2rem;
+    }
+
+    .swipe-wrap {
+      flex-direction: column-reverse;
+
+      .absolute-p {
+        position: relative;
+        max-width: 100%;
+        top: 0;
+        right: 0;
+        order: 1;
+      }
+    }
+  }
 }
