@@ -1833,3 +1833,204 @@ footer {
 .examples__about {
   padding: 0 0 10rem;
 }
+
+.home-premises {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(17, 17, 17, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/src/img/premises-bg.png);
+  background-position: center;
+  background-size: cover;
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .wrapper {
+    margin-top: auto;
+    margin-bottom: 5.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      @include font(5rem, 5.6rem, 700);
+      color: white;
+      max-width: 76.8rem;
+    }
+
+    p {
+      @include font(1.5rem, 2.4rem, 400);
+      color: white;
+      max-width: 43.2rem;
+    }
+  }
+}
+
+.premises {
+  padding: 14rem 0 0;
+  background: #f8ffff;
+
+  .tabby {
+    height: 5.6rem;
+    border: none;
+    display: flex;
+    width: 100%;
+
+    li {
+      border: 1px solid #073535;
+      border-radius: 0;
+      width: 100%;
+    }
+
+    a {
+      @include font(1.9rem, 3.2rem, 400);
+      border-radius: 0;
+      text-align: center;
+      color: #3c4e4e;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      &[aria-selected="true"] {
+        background: #3c4e4e;
+        color: #fff;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .wrapper {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 48rem 1fr;
+      width: 100%;
+      row-gap: 3.6rem;
+      border-bottom: 1px solid #9a9da3;
+      padding: 5.2rem 0;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          @include font(2.4rem, 2.8rem, 700);
+          color: #141515;
+        }
+        h3 {
+          @include font(1.9rem, 3.2rem, 700);
+          color: #141515;
+        }
+
+        a {
+          @include font(1.9rem, 3.2rem, 700);
+          color: #141515;
+          text-decoration: underline !important;
+        }
+
+        p {
+          @include font(1.5rem, 2.4rem, 400);
+          color: #141515;
+        }
+
+        h4 {
+          @include font(1.5rem, 2.4rem, 700);
+          color: #141515;
+        }
+
+        &__swiper {
+          position: relative;
+
+          .swiper-items {
+            width: 100%;
+            height: 19.2rem;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .items-btn-next {
+            position: absolute;
+            z-index: 10;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .items-btn-prev {
+            position: absolute;
+            z-index: 10;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .items-pagination {
+            position: absolute;
+            z-index: 10;
+            right: 1rem;
+            left: unset;
+            bottom: 0;
+            width: fit-content;
+
+            @include font(1.5rem, 2.4rem, 400);
+            color: #141515;
+          }
+        }
+
+        &__heading {
+          grid-column: span 3;
+        }
+
+        &__price {
+          grid-row: span 2;
+          align-items: end;
+        }
+      }
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 100%;
+      margin-top: 3.2rem;
+      border: 0.5px solid #073535;
+      height: 11.4rem;
+
+      .item {
+        padding: 2rem 4.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        border: 0.5px solid #073535;
+
+        h2 {
+          @include font(1.7rem, 2.8rem, 700);
+          color: #141515;
+        }
+
+        p {
+          @include font(1.9rem, 3.2rem, 400);
+          color: #141515;
+        }
+      }
+    }
+  }
+}

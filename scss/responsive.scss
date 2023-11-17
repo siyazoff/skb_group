@@ -1130,4 +1130,135 @@ $blue: #2c39ac;
       }
     }
   }
+
+  .home-premises {
+    .wrapper {
+      margin-bottom: 2.4rem;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      h1 {
+        @include font(2.8rem, 3.2rem, 700);
+        max-width: 100%;
+      }
+
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .premises {
+    padding: 12rem 0 0;
+
+    .tabby {
+      height: 100%;
+      flex-direction: column;
+
+      a {
+        @include font(1.5rem, 2.4rem, 400);
+        padding: 1.4rem 0;
+      }
+    }
+
+    .wrapper {
+      .grid {
+        grid-template-columns: 50% 50%;
+        row-gap: 2.4rem;
+        padding: 3.6rem 0;
+        width: 100%;
+
+        .item {
+          gap: 1rem;
+
+          h2 {
+            @include font(2rem, 2.4rem, 700);
+          }
+          h3 {
+            @include font(1.5rem, 2.4rem, 700);
+          }
+          a {
+            @include font(1.5rem, 2.4rem, 700);
+          }
+
+          p {
+            @include font(1.1rem, 1.6rem, 400);
+          }
+
+          h4 {
+            @include font(1.1rem, 1.6rem, 700);
+          }
+
+          &__swiper {
+            position: relative;
+            grid-column: span 2;
+            order: 3;
+
+            .swiper-items {
+              height: 14.4rem;
+            }
+
+            .items-btn-next {
+              position: absolute;
+              z-index: 10;
+              right: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+
+            .items-btn-prev {
+              position: absolute;
+              z-index: 10;
+              left: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+
+            .items-pagination {
+              position: absolute;
+              z-index: 10;
+              right: 1rem;
+              left: unset;
+              bottom: 0;
+              width: fit-content;
+
+              @include font(1.5rem, 2.4rem, 400);
+              color: #141515;
+            }
+          }
+
+          &__heading {
+            grid-column: span 2;
+          }
+
+          &__price {
+            grid-row: unset;
+            grid-column: span 2;
+            flex-direction: row;
+            order: 2;
+          }
+        }
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+        height: 100%;
+
+        .item {
+          padding: 2rem 1.6rem;
+          height: 11rem;
+
+          h2 {
+            @include font(1.3rem, 2rem, 700);
+          }
+
+          p {
+            @include font(1.5rem, 2.4rem, 400);
+          }
+        }
+      }
+    }
+  }
 }

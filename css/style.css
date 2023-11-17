@@ -1651,4 +1651,195 @@ footer .copyright a img {
 
 .examples__about {
   padding: 0 0 10rem;
+}
+
+.home-premises {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.9) 0%, rgba(0, 0, 0, 0) 100%), url(/src/img/premises-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.home-premises .cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.home-premises .wrapper {
+  margin-top: auto;
+  margin-bottom: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home-premises .wrapper h1 {
+  font-size: 5rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+  color: white;
+  max-width: 76.8rem;
+}
+.home-premises .wrapper p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: white;
+  max-width: 43.2rem;
+}
+
+.premises {
+  padding: 14rem 0 0;
+  background: #f8ffff;
+}
+.premises .tabby {
+  height: 5.6rem;
+  border: none;
+  display: flex;
+  width: 100%;
+}
+.premises .tabby li {
+  border: 1px solid #073535;
+  border-radius: 0;
+  width: 100%;
+}
+.premises .tabby a {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  border-radius: 0;
+  text-align: center;
+  color: #3c4e4e;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.premises .tabby a[aria-selected=true] {
+  background: #3c4e4e;
+  color: #fff;
+  transition: all 0.3s;
+}
+.premises .wrapper .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 48rem 1fr;
+  width: 100%;
+  row-gap: 3.6rem;
+  border-bottom: 1px solid #9a9da3;
+  padding: 5.2rem 0;
+}
+.premises .wrapper .grid .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.premises .wrapper .grid .item h2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  color: #141515;
+}
+.premises .wrapper .grid .item h3 {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #141515;
+}
+.premises .wrapper .grid .item a {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #141515;
+  text-decoration: underline !important;
+}
+.premises .wrapper .grid .item p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #141515;
+}
+.premises .wrapper .grid .item h4 {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #141515;
+}
+.premises .wrapper .grid .item__swiper {
+  position: relative;
+}
+.premises .wrapper .grid .item__swiper .swiper-items {
+  width: 100%;
+  height: 19.2rem;
+  overflow: hidden;
+}
+.premises .wrapper .grid .item__swiper .swiper-items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.premises .wrapper .grid .item__swiper .items-btn-next {
+  position: absolute;
+  z-index: 10;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.premises .wrapper .grid .item__swiper .items-btn-prev {
+  position: absolute;
+  z-index: 10;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.premises .wrapper .grid .item__swiper .items-pagination {
+  position: absolute;
+  z-index: 10;
+  right: 1rem;
+  left: unset;
+  bottom: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #141515;
+}
+.premises .wrapper .grid .item__heading {
+  grid-column: span 3;
+}
+.premises .wrapper .grid .item__price {
+  grid-row: span 2;
+  align-items: end;
+}
+.premises .wrapper .info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 3.2rem;
+  border: 0.5px solid #073535;
+  height: 11.4rem;
+}
+.premises .wrapper .info-grid .item {
+  padding: 2rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 0.5px solid #073535;
+}
+.premises .wrapper .info-grid .item h2 {
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  color: #141515;
+}
+.premises .wrapper .info-grid .item p {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #141515;
 }/*# sourceMappingURL=style.css.map */

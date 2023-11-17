@@ -171,3 +171,20 @@ const swiperVideos = new Swiper(".swiper-videos", {
     prevEl: ".video-btn-prev",
   },
 });
+
+const swiperItems = new Swiper(".swiper-items", {
+  direction: "horizontal",
+
+  spaceBetween: 10,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: ".items-btn-next",
+    prevEl: ".items-btn-prev",
+  },
+
+  pagination: {
+    el: ".items-pagination",
+    type: "fraction",
+  },
+});

@@ -975,4 +975,129 @@
   .partner .swiper-videos .btns svg {
     width: 3.8rem;
   }
+  .home-premises .wrapper {
+    margin-bottom: 2.4rem;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .home-premises .wrapper h1 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    max-width: 100%;
+  }
+  .home-premises .wrapper p {
+    max-width: 100%;
+  }
+  .premises {
+    padding: 12rem 0 0;
+  }
+  .premises .tabby {
+    height: 100%;
+    flex-direction: column;
+  }
+  .premises .tabby a {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    padding: 1.4rem 0;
+  }
+  .premises .wrapper .grid {
+    grid-template-columns: 50% 50%;
+    row-gap: 2.4rem;
+    padding: 3.6rem 0;
+    width: 100%;
+  }
+  .premises .wrapper .grid .item {
+    gap: 1rem;
+  }
+  .premises .wrapper .grid .item h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .premises .wrapper .grid .item h3 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .premises .wrapper .grid .item a {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .premises .wrapper .grid .item p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+  }
+  .premises .wrapper .grid .item h4 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+  .premises .wrapper .grid .item__swiper {
+    position: relative;
+    grid-column: span 2;
+    order: 3;
+  }
+  .premises .wrapper .grid .item__swiper .swiper-items {
+    height: 14.4rem;
+  }
+  .premises .wrapper .grid .item__swiper .items-btn-next {
+    position: absolute;
+    z-index: 10;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .premises .wrapper .grid .item__swiper .items-btn-prev {
+    position: absolute;
+    z-index: 10;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .premises .wrapper .grid .item__swiper .items-pagination {
+    position: absolute;
+    z-index: 10;
+    right: 1rem;
+    left: unset;
+    bottom: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #141515;
+  }
+  .premises .wrapper .grid .item__heading {
+    grid-column: span 2;
+  }
+  .premises .wrapper .grid .item__price {
+    grid-row: unset;
+    grid-column: span 2;
+    flex-direction: row;
+    order: 2;
+  }
+  .premises .wrapper .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    height: 100%;
+  }
+  .premises .wrapper .info-grid .item {
+    padding: 2rem 1.6rem;
+    height: 11rem;
+  }
+  .premises .wrapper .info-grid .item h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .premises .wrapper .info-grid .item p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=responsive.css.map */
