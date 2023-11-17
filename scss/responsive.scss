@@ -2,7 +2,7 @@
 
 $neue: "Neue Machina";
 
-$main: #d1a954;
+$main: #3c4e4e;
 $black: #333333;
 $gray: #444;
 $green: #23a04d;
@@ -697,6 +697,436 @@ $blue: #2c39ac;
         top: 0;
         right: 0;
         order: 1;
+      }
+    }
+  }
+
+  .show {
+    position: relative;
+    height: 103.6rem;
+    z-index: 0;
+
+    .bg__wrapper {
+      width: 100%;
+    }
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0;
+    }
+
+    .main {
+      &.window {
+        top: 41.5%;
+        right: unset;
+        left: 47%;
+      }
+
+      &.walls {
+        top: 70%;
+        right: 27%;
+      }
+
+      &.front {
+        top: 30%;
+        right: 22%;
+      }
+
+      &.skeleton {
+        top: 62%;
+        right: 20.7%;
+      }
+
+      .info {
+        padding: 0.8rem;
+        display: flex;
+        background: white;
+        max-width: 29.2rem;
+        gap: 0.8rem;
+        opacity: 0;
+        transition: all 0.5s;
+
+        img {
+          width: 6.8rem;
+          height: 6.8rem;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .title {
+          color: #141515;
+
+          h2 {
+            @include font(1.5rem, 2.4rem, 700);
+          }
+
+          p {
+            @include font(1.3rem, 2rem, 400);
+          }
+        }
+      }
+
+      .line {
+        opacity: 0;
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        .info {
+          opacity: 1;
+          transition: all 0.5s;
+        }
+
+        .line {
+          opacity: 1;
+          transition: all 0.5s;
+        }
+      }
+    }
+
+    .cont {
+      height: 100%;
+    }
+
+    .wrapper {
+      height: fit-content;
+      max-width: 100%;
+      padding: 12rem 1.6rem 2rem;
+
+      .heading {
+        h1 {
+          @include font(2.4rem, 2.8rem, 700);
+
+          span {
+            @include font(1.3rem, 2rem, 400);
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .location {
+    padding: 12rem 0;
+  }
+
+  .skb-heading {
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+
+    h1 {
+      @include font(2.4rem, 2.8rem, 700);
+      max-width: 100%;
+
+      span {
+        @include font(1.3rem, 2rem, 400);
+        margin-right: 3rem;
+      }
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  .infrastructure {
+    padding: 0 0 12rem;
+
+    .cont {
+      .cont__left,
+      .cont__right {
+        max-width: 100%;
+      }
+
+      .cont__right {
+        display: none;
+      }
+
+      .cont__left {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+
+    .skb-heading {
+      h1 {
+        span {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .swiper-info-p {
+      height: 28rem;
+      overflow: hidden;
+      width: 100%;
+
+      p {
+        @include font(1.5rem, 2.4rem, 400);
+        color: #000;
+      }
+    }
+
+    .swiper-info-imgs-1 {
+      height: 37rem;
+    }
+
+    .btns {
+      bottom: 7rem;
+    }
+  }
+
+  .feature {
+    padding: 0 0 12rem;
+
+    .skb-heading {
+      margin-bottom: 2.4rem;
+
+      h1 {
+        max-width: 100%;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+
+      .item {
+        padding: 2rem 1.6rem 1.6rem 1.6rem;
+        justify-content: space-between;
+
+        h2 {
+          @include font(2.8rem, 3.2rem, 700);
+        }
+
+        p {
+          @include font(1.3rem, 2rem, 700);
+          width: 100%;
+          max-width: 20rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        h3 {
+          @include font(2rem, 2.4rem, 700);
+        }
+
+        &__big {
+          grid-column: span 2;
+          grid-row: 1;
+
+          p {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    padding: 12rem 0;
+
+    .skb-heading {
+      margin-bottom: 2.4rem;
+
+      h1 {
+        max-width: 100%;
+      }
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 32.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      .swiper-gallery {
+        width: 100%;
+        height: 80%;
+      }
+
+      .swiper-gallery-thumbs {
+        width: 100%;
+        height: 20%;
+      }
+
+      .btns {
+        padding: 0 1.6rem;
+
+        .gallery-btn-next {
+          margin-left: auto;
+          margin-right: 4.8rem;
+
+          svg {
+            width: 3.8rem;
+          }
+        }
+
+        .gallery-btn-prev {
+          margin-right: auto;
+
+          svg {
+            width: 3.8rem;
+          }
+        }
+
+        .gallery-pagination {
+          @include font(1.3rem, 2rem, 400);
+        }
+      }
+    }
+  }
+
+  .examples__secondary {
+    padding: 0 0 12rem 0;
+  }
+
+  .home-about {
+    .cont {
+      .wrapper {
+        padding: 3.2rem 1.6rem 2.4rem;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      h1 {
+        @include font(2.8rem, 3.2rem, 700);
+      }
+    }
+  }
+
+  .about-skb {
+    padding: 12rem 0;
+
+    .heading {
+      gap: 2.4rem;
+
+      h2 {
+        @include font(2.4rem, 2.8rem, 700);
+        max-width: 100%;
+
+        span {
+          @include font(1.3rem, 2rem, 400);
+          margin-right: 3rem;
+        }
+      }
+
+      p {
+        max-width: 100%;
+      }
+    }
+
+    .date {
+      margin-top: 4.4rem;
+
+      h3 {
+        @include font(9.6rem, 9.6rem, 400);
+      }
+    }
+
+    .imgs {
+      flex-direction: column;
+      margin-top: 3.6rem;
+      gap: 2rem;
+
+      img {
+        width: 100%;
+        max-width: 34.5rem;
+        height: 18.4rem;
+
+        &.imgs-small {
+          height: 27.2rem;
+          margin-left: auto;
+        }
+      }
+    }
+
+    .desc {
+      margin-top: 2.4rem;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      max-width: 100%;
+      margin-top: 3.1rem;
+      transform: translateX(0);
+
+      .item {
+        height: 19.6rem;
+        width: 100%;
+        padding: 1.6rem;
+
+        h2 {
+          @include font(2.8rem, 3.2rem, 700);
+        }
+
+        p {
+          @include font(1.3rem, 2rem, 400);
+          max-width: 32rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &-img {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .partner {
+    .skb-heading {
+      margin-bottom: 2.4rem;
+
+      h1 {
+        max-width: 100%;
+      }
+    }
+
+    .grid {
+      grid-template-columns: repeat(2, 50%);
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 4rem;
+
+      .item {
+        height: 9rem;
+        padding: 1.5rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .swiper-videos {
+      height: 20rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .btns {
+        gap: 2.8rem;
+        padding: 0.4rem;
+
+        svg {
+          width: 3.8rem;
+        }
       }
     }
   }
