@@ -245,22 +245,52 @@
                 <div class="swiper-two-room">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room.png" alt="skb two room" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room-2.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room-2.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room-2.png" alt="skb two room" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room-3.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room-3.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room-3.png" alt="skb two room" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room.png" alt="skb two room" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room-2.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room-2.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room-2.png" alt="skb two room" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/src/img/two-room-3.png" alt="skb two room" />
+                      <a
+                        data-src="/src/img/two-room-3.png"
+                        data-fancybox="choose-swiper"
+                      >
+                        <img src="/src/img/two-room-3.png" alt="skb two room" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -283,7 +313,7 @@
       <!-- ! choose ends -->
 
       <!-- ! show starts -->
-      <section class="show d-none" id="show">
+      <section class="show_section" id="show_section">
         <div class="bg__wrapper">
           <div class="main window">
             <svg
@@ -320,11 +350,11 @@
               />
             </svg>
             <div class="info">
-              <img src="/src/img/show-1.png" alt="show-1" />
+              <img src="/src/img/show-2.png" alt="show-1" />
 
               <div class="title">
-                <h2>Фасад</h2>
-                <p>Навесные вентилируемые фасадные панели</p>
+                <h2>Окна</h2>
+                <p>МультифункциональныйКВЕ (5 камер)</p>
               </div>
             </div>
           </div>
@@ -406,11 +436,11 @@
               />
             </svg>
             <div class="info">
-              <img src="/src/img/show-1.png" alt="show-1" />
+              <img src="/src/img/show-3.png" alt="show-1" />
 
               <div class="title">
-                <h2>Фасад</h2>
-                <p>Навесные вентилируемые фасадные панели</p>
+                <h2>Каркас</h2>
+                <p>Монолитный железобетон</p>
               </div>
             </div>
           </div>
@@ -449,16 +479,20 @@
               />
             </svg>
             <div class="info">
-              <img src="/src/img/show-1.png" alt="show-1" />
+              <img src="/src/img/show-4.png" alt="show-1" />
 
               <div class="title">
-                <h2>Фасад</h2>
-                <p>Навесные вентилируемые фасадные панели</p>
+                <h2>Стены</h2>
+                <p>Автоклавный газоблокплотностью D600</p>
               </div>
             </div>
           </div>
-          <img class="bg d-none" src="/src/img/main-bg.png" alt="skb main" />
-          <img class="bg" src="/src/img/show-bg-mobile.png" alt="skb main" />
+          <img class="bg" src="/src/img/main-bg.png" alt="skb main" />
+          <img
+            class="bg bg-mobile"
+            src="/src/img/show-bg-mobile.png"
+            alt="skb main"
+          />
         </div>
         <div class="cont">
           <div class="wrapper">
@@ -1057,6 +1091,10 @@
       var tabs = new Tabby("[data-tabs]");
 
       Fancybox.bind('[data-fancybox="gallery-swiper"]', {
+        //
+      });
+
+      Fancybox.bind('[data-fancybox="choose-swiper"]', {
         //
       });
     </script>

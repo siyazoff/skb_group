@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- local styles  -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
     <title>
       SKB GROUP | Мы строим не просто дома, но создаём ваше будущее!
     </title>
@@ -178,16 +183,36 @@
           <div class="swiper-videos">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="/src/img/video-type.png" alt="skb" />
+                <a
+                  data-src="/src/img/video-type.png"
+                  data-fancybox="partners_fancy"
+                >
+                  <img src="/src/img/video-type.png" alt="skb" />
+                </a>
               </div>
               <div class="swiper-slide">
-                <img src="/src/img/video-type.png" alt="skb" />
+                <a
+                  data-src="/src/img/video-type.png"
+                  data-fancybox="partners_fancy"
+                >
+                  <img src="/src/img/video-type.png" alt="skb" />
+                </a>
               </div>
               <div class="swiper-slide">
-                <img src="/src/img/video-type.png" alt="skb" />
+                <a
+                  data-src="/src/img/video-type.png"
+                  data-fancybox="partners_fancy"
+                >
+                  <img src="/src/img/video-type.png" alt="skb" />
+                </a>
               </div>
               <div class="swiper-slide">
-                <img src="/src/img/video-type.png" alt="skb" />
+                <a
+                  data-src="/src/img/video-type.png"
+                  data-fancybox="partners_fancy"
+                >
+                  <img src="/src/img/video-type.png" alt="skb" />
+                </a>
               </div>
             </div>
             <div class="btns">
@@ -508,6 +533,13 @@
     <script src="/js/main.js"></script>
     <!-- local scripts -->
 
+    <!-- cdn  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/l10n/de.umd.js"></script>
+
+    <!-- cdn  -->
+
     <script>
       function highlightOthers(element) {
         var container = element.parentNode;
@@ -528,6 +560,10 @@
           elements[i].classList.remove("highlight");
         }
       }
+
+      Fancybox.bind('[data-fancybox="partners_fancy"]', {
+        l10n: Fancybox.l10n.de,
+      });
     </script>
   </body>
 </html>

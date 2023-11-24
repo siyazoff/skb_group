@@ -604,15 +604,20 @@
     right: 0;
     order: 1;
   }
-  .show {
+  .show_section {
     position: relative;
     height: 103.6rem;
     z-index: 0;
   }
-  .show .bg__wrapper {
+  .show_section .bg__wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 40px;
+    align-items: center;
   }
-  .show .bg {
+  .show_section .bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -621,33 +626,52 @@
     -o-object-position: 0;
        object-position: 0;
   }
-  .show .main.window {
-    top: 41.5%;
+  .show_section .bg.bg-mobile {
+    display: block;
+  }
+  .show_section .main {
+    position: relative;
+    opacity: 1;
+  }
+  .show_section .main svg {
+    display: none;
+  }
+  .show_section .main.window {
+    top: unset;
     right: unset;
-    left: 47%;
+    left: unset;
+    margin-left: 15px;
+    margin-right: auto;
   }
-  .show .main.walls {
-    top: 70%;
-    right: 27%;
+  .show_section .main.walls {
+    top: unset;
+    right: unset;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: 15px;
   }
-  .show .main.front {
-    top: 30%;
-    right: 22%;
+  .show_section .main.front {
+    top: unset;
+    right: unset;
+    margin-left: auto;
+    margin-right: 15px;
   }
-  .show .main.skeleton {
-    top: 62%;
-    right: 20.7%;
+  .show_section .main.skeleton {
+    top: unset;
+    right: unset;
+    margin-left: 15px;
+    margin-right: auto;
   }
-  .show .main .info {
+  .show_section .main .info {
     padding: 0.8rem;
     display: flex;
     background: white;
     max-width: 29.2rem;
     gap: 0.8rem;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s;
   }
-  .show .main .info img {
+  .show_section .main .info img {
     width: 6.8rem;
     height: 6.8rem;
     -o-object-fit: cover;
@@ -655,46 +679,37 @@
     -o-object-position: center;
        object-position: center;
   }
-  .show .main .info .title {
+  .show_section .main .info .title {
     color: #141515;
   }
-  .show .main .info .title h2 {
+  .show_section .main .info .title h2 {
     font-size: 1.5rem;
     line-height: 2.4rem;
     font-weight: 700;
   }
-  .show .main .info .title p {
+  .show_section .main .info .title p {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 400;
   }
-  .show .main .line {
-    opacity: 0;
-    transition: all 0.5s;
+  .show_section .main .line {
+    display: none;
   }
-  .show .main:hover .info {
-    opacity: 1;
-    transition: all 0.5s;
-  }
-  .show .main:hover .line {
-    opacity: 1;
-    transition: all 0.5s;
-  }
-  .show .cont {
+  .show_section .cont {
     height: 100%;
   }
-  .show .wrapper {
+  .show_section .wrapper {
     height: -moz-fit-content;
     height: fit-content;
     max-width: 100%;
     padding: 12rem 1.6rem 2rem;
   }
-  .show .wrapper .heading h1 {
+  .show_section .wrapper .heading h1 {
     font-size: 2.4rem;
     line-height: 2.8rem;
     font-weight: 700;
   }
-  .show .wrapper .heading h1 span {
+  .show_section .wrapper .heading h1 span {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 400;
@@ -850,7 +865,7 @@
     padding: 0 0 12rem 0;
   }
   .home-about .cont .wrapper {
-    padding: 3.2rem 1.6rem 2.4rem;
+    padding: 3.2rem 0 2.4rem;
     flex-direction: column;
     gap: 0.8rem;
   }
@@ -1099,5 +1114,69 @@
     font-size: 1.5rem;
     line-height: 2.4rem;
     font-weight: 400;
+  }
+  .examples__about {
+    padding: 0 0 10rem;
+  }
+  .thx {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding-inline: 15px;
+  }
+  .thx h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #073535;
+  }
+  .thx h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #434443;
+  }
+  .thx .skb-btn {
+    color: #3c4e4e;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 15.2rem;
+    height: 15.2rem;
+  }
+  .not_found {
+    height: 100%;
+    padding: 18rem 0 12rem;
+  }
+  .not_found .cont {
+    gap: 4rem;
+    flex-direction: column-reverse;
+  }
+  .not_found .left {
+    max-width: 100%;
+  }
+  .not_found .right {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .not_found .right h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    opacity: 0.5;
+  }
+  .not_found .right .skb-btn {
+    color: #3c4e4e;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 15.2rem;
+    height: 15.2rem;
+    margin-inline: auto;
   }
 }/*# sourceMappingURL=responsive.css.map */

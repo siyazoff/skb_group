@@ -128,7 +128,7 @@
                 class="skb-btn"
                 href="#"
                 data-toggle="modal"
-                data-target="#modal"
+                data-target="#order_modal"
                 >ОСТАВИТЬ ЗАЯВКУ</a
               >
             </div>
@@ -402,12 +402,18 @@
               упустите возможность запустить успешный бизнес в сердце города.
             </p>
           </div>
-          <a class="skb-btn" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+          <a
+            class="skb-btn"
+            href="#"
+            data-toggle="modal"
+            data-target="#order_modal"
+            >ОСТАВИТЬ ЗАЯВКУ</a
+          >
           <div class="wrapper">
-            <p>ЖК Presidents Park</p>
-            <p>ЖК Rayan</p>
-            <p>ЖК Blossom Gardens</p>
-            <p>ЖК Central Park</p>
+            <a href="#">ЖК Presidents Park</a>
+            <a href="#">ЖК Rayan</a>
+            <a href="#">ЖК Blossom Gardens</a>
+            <a href="#">ЖК Central Park</a>
           </div>
         </div>
       </section>
@@ -433,7 +439,13 @@
               <p>
                 Оставьте заявку! Мы свяжемся с вами, чтобы обсудить все детали.
               </p>
-              <a class="skb-btn" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+              <a
+                class="skb-btn"
+                href="#"
+                data-toggle="modal"
+                data-target="#order_modal"
+                >ОСТАВИТЬ ЗАЯВКУ</a
+              >
             </div>
             <div class="grid__third">
               <a href="tel:+7 (700) 040-41-83">+7 (700) 040-41<br />-83</a>
@@ -540,7 +552,7 @@
     <!--* modal window  -->
     <div
       class="modal fade"
-      id="modal"
+      id="order_modal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="modal"
@@ -549,55 +561,38 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
+            <div class="heading">
+              <h2>Оставить заявку</h2>
+            </div>
             <form action="" class="form">
               <input
                 type="text"
-                placeholder="Имя"
+                placeholder="Контактное лицо"
                 class="form__input"
                 id="name"
               />
 
-              <input type="tel" placeholder="+7" class="form__input" id="tel" />
+              <input
+                type="tel"
+                placeholder="Номер телефона"
+                class="form__input"
+                id="tel"
+              />
 
               <input
                 type="email"
-                placeholder="example@gmail.com"
+                placeholder="Email"
                 class="form__input"
                 id="email"
               />
 
-              <textarea
-                style="resize: none"
-                placeholder="Напишите что нибудь"
-                name="comment"
-                id="comment"
-                cols="45"
-                rows="5"
-              ></textarea>
-
               <input
                 type="submit"
-                value="Отправить"
-                class="custom-btn form-btn"
+                value="Оставить завяку"
+                class="modal-btn"
                 id="submit"
               />
             </form>
-            <a class="close-btn" href="#" data-dismiss="modal">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.0001 11.1787L5.28604 15.8927C4.9606 16.2182 4.43297 16.2182 4.10753 15.8927C3.78209 15.5673 3.78209 15.0396 4.10753 14.7142L8.82157 10.0002L4.10753 5.28612C3.78209 4.96069 3.78209 4.43305 4.10753 4.10761C4.43297 3.78218 4.9606 3.78218 5.28604 4.10761L10.0001 8.82165L14.7141 4.1076C15.0396 3.78217 15.5672 3.78217 15.8926 4.1076C16.2181 4.43304 16.2181 4.96068 15.8926 5.28611L11.1786 10.0002L15.8926 14.7142C16.2181 15.0397 16.2181 15.5673 15.8926 15.8927C15.5672 16.2182 15.0396 16.2182 14.7141 15.8927L10.0001 11.1787Z"
-                  fill="#2F2F2F"
-                />
-              </svg>
-            </a>
           </div>
         </div>
       </div>
